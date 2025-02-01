@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Nature Platter</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#179800'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sora">
+  <header class="bg-base-200">
+    <section class="navbar container mx-auto">
+      <div class="navbar bg-base-200">
+        <div class="navbar-start">
+          <img src="assets/logo-header.png" alt="">
+          <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#">Product</a></li>
+            <li> <a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  ">
+          <div class="hidden md:flex">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </button>
+            <button class="btn border-solid  border-primary mx-3 ">Login</button>
+            <button class="btn bg-primary">Register</button>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a href="#">Product</a></li>
+              <li> <a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="hero mt-10 ">
+        <div class=" text-center">
+          <div class="max-w-3xl animate-pulse">
+            <h1 class=" text-4xl md:text-5xl font-bold ">Freshness <span class="text-primary ">You Can <br> Count</span>
+              On, Prices You’ll Love!</h1>
+            <p class="py-6 ">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <img class="" src="assets/hero-vegetables.png" alt="">
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class=" container mx-auto mt-20">
+      <h2 class="text-3xl ml-4 md:text-4xl font-bold text-primary my-10">Services</h2>
+      <div class="md:flex md:flex-row">
+        <div class=" flex flex-col text-center justify-center items-center bg-base-200 md:w-1/3 p-8 rounded-box">
+          <div class="bg-base-100 p-5 rounded-full ">
+            <img src="assets/service.png" alt="Services">
+          </div>
+          <h3 class="text-2xl font-bold my-4">24/7 Services</h3>
+          <p> Email: support@naturesplatter.com.
+            Or use the Contact Us form on our website for quick assistance.</p>
+        </div>
+        <div
+          class=" flex flex-col text-center justify-center items-center bg-base-200 md:w-1/3 p-8 rounded-box my-10 md:my-0  md:mx-10">
+          <div class="bg-base-100 p-5 rounded-full ">
+            <img src="assets/delivery.png" alt="Services">
+          </div>
+          <h3 class="text-2xl font-bold my-4">Fast Delivery</h3>
+          <p>We offer a wide range of products, including:
+            Healthy treats and snacks for pets .</p>
+        </div>
+        <div class=" flex flex-col text-center justify-center items-center bg-base-200 md:w-1/3 p-8 rounded-box">
+          <div class="bg-base-100 p-5 rounded-full ">
+            <img src="assets/healthy.png" alt="Services">
+          </div>
+          <h3 class="text-2xl font-bold my-4">Healthy Products </h3>
+          <p>Nature's Platter is a brand that provides a curated selection of treats.</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-base-200 mt-20">
+      <div class="container mx-auto py-12 ">
+        <h2 class="ml-4 text-3xl md:text-5xl font-bold text-primary my-10">Popular Products</h2>
+        <div class=" md:flex md:flex-row ">
+          <div class="md:w-2/6 bg-gradient-to-r from-green-600 from-10%  to-green-300 to-90% relative m-3 rounded-box">
+            <div class=" w-2/3 p-4 md:pt-10 md:pl-10 ">
+              <h3 class="font-bold text-2xl text-white">
+                30% off
+              </h3>
+              <p class="py-3 pr-4"> Magni enim ratione, officia optio soluta reiciendis laborum obcaecati </p>
+              <button class="btn font-bold">Buy Now</button>
+            </div>
+            <div class=" absolute  bottom-0 left-56">
+              <img src="assets/vegetable-offer.png" alt="">
+            </div>
+          </div>
+          <div class="md:w-4/6  Popular ">
+            <div class=" flex flex-row bg-base-100 p-4  m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/tomato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/onion.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/potato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/onion.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/potato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/tomato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/onion.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/tomato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+
+            <div class=" flex flex-row bg-base-100 p-4 m-2 rounded-box hidden md:flex">
+              <div class="p-2 mr-3 bg-base-200"><img src="assets/potato.png" alt=""></div>
+              <div>
+                <div class="flex text-center items-center">
+                  <img src="assets/star-icon (2).png" alt="">
+                  <p class="mx-3 font-bold ">4.5</p>
+                </div>
+                <p class="font-bold md:text-xl">Tomato 500g</p>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto my-20 gap-4">
+        <h2 class=" text-3xl ml-4 md:text-4xl font-bold text-primary my-10 ">Got Questions?</h2>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">1. What is Nature's Platter?</div>
+          <div class="collapse-content">
+            <p>Nature's Platter is a brand that provides a curated selection of treats, toys, and essential products
+              handpicked for pets. We aim to deliver healthy, sustainable, and enjoyable items for your furry friends.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">2. What types of products do you offer?</div>
+          <div class="collapse-content">
+            <p>We offer a wide range of products, including:
+
+              Healthy treats and snacks for pets.
+              Interactive and engaging toys.
+              Grooming essentials.
+              Eco-friendly pet care items.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">3. Do you cater to specific dietary needs for pets?</div>
+          <div class="collapse-content">
+            <p>Yes, Nature's Platter ensures that pets with specific dietary requirements (e.g., gluten-free,
+              grain-free, or organic options) have access to products that suit their needs. We prioritize quality and
+              safety in every product we offer.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">4. How can I subscribe to updates and deals?</div>
+          <div class="collapse-content">
+            <p>You can subscribe to our newsletter by entering your email on our website's subscription section. You'll
+              receive exclusive training tips, product updates, deals, and other pet care insights.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">5. How do I contact Nature's Platter for support?</div>
+          <div class="collapse-content">
+            <p>You can contact us through:
+
+              Email: support@naturesplatter.com
+              Phone: (XXX-XXX-XXXX)
+              Or use the Contact Us form on our website for quick assistance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container  mx-auto mt-20 mb-96">
+        <h2 class=" text-3xl ml-4 md:text-4xl font-bold text-primary my-10 ">Arrival & Offers</h2>
+        <div class="md:flex md:flex-row">
+          <div class="flex flex-row justify-between rounded-box md:w-3/5 p-6 m-5 bg-[#115414]">
+            <div class=" flex flex-col items-center justify-center">
+              <img src="assets/dawat-logo.png" alt="">
+              <button class="btn bg-[#63B76D] border-0 m-4 text-white">Cook Exotic Dishes</button>
+              <p class="text-2xl text-white">UP to <span class="font-bold">20% OFF</span></p>
+            </div>
+            <div>
+              <img src="assets/dawat-mock-up.png" alt="">
+            </div>
+          </div>
+          <div class="flex flex-row justify-between rounded-box md:w-2/5 p-6 m-5 bg-[#102861]">
+            <div class=" flex flex-col items-center justify-center md:ml-10">
+              <img src="assets/india-gate-logo.png" alt="">
+              <button class="btn bg-[#2A4D97] border-0 m-3 text-white">World’s No.1 Rice</button>
+              <p class="text-2xl  text-white">UP to <span class="font-bold">40% OFF</span></p>
+            </div>
+            <div>
+              <img src="assets/india-gate-mock-up.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-green-600">
+    <div class="relative bg-green-600 pt-56 ">
+      <div class="footer container mx-auto text-base-content p-10 relative bg-green-600 ">
+        <div
+          class="md:flex md:flex-row justify-center md:justify-between items-center container mx-auto bg-[#EFEBE3] rounded-box absolute bottom-full md:bottom-64 md:mt-40  text-center  md:text-start pb-6 ">
+          <div class="md:w-1/2 flex flex-col justify-center items-center ">
+            <img class="w-2/3" src="assets/vegetable-busket.png" alt="">
+          </div>
+          <div class="md:w-1/2 justify-center">
+            <h3 class="text-2xl text-primary font-bold mb-2">Get Grocery News!</h3>
+            <p class="font-bold">Exclusive training tips, ticks, product deals and more</p>
+            <input class=" pr-40 lg:pr-40 pl-4 py-3 my-4 rounded-md" placeholder="Enter email" type="text"> <br>
+            <button class="btn mt-2 bg-primary text-white font-bold">Subscribe</button>
+          </div>
+        </div>
+        <nav class="text-white">
+          <img src="assets/logo-footer.png" alt="">
+          <p class=" text-xl md:text-2xl text-base-300">Discover a world of treats, toys, and <br> essentials handpicked
+            for your furry friends</p>
+        </nav>
+        <nav class="text-white text-base-300 text-xl">
+          <a class="link link-hover ">Product</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Services</a>
+        </nav>
+        <nav class="text-white text-2xl">
+          <h6 class="footer-title">Follow Us</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                </path>
+              </svg>
+            </a>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                </path>
+              </svg>
+            </a>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
